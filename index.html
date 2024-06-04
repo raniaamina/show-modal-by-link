@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Show Modal by Link</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="container p-5">
+            <div class="row" id="masonrow">
+                <div class="col-3 mb-3"><a id="post-1" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img class="img-fluid w-100" alt="a group of chairs sitting outside of a building" src="assets/img/photo-1717210398121-245fc24025d7.jpg"></a></div>
+                <div class="col-3 mb-3"><a id="post-2" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img class="img-fluid w-100" alt="a man riding a snowboard down a snow covered slope" src="assets/img/photo-1716927111848-56163afc0107.jpg"></a></div>
+                <div class="col-3 mb-3"><a id="post-3" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img alt="a group of vases sitting on top of a shelf" src="assets/img/photo-1717340711373-34281461d84a.jpg" width="100%"></a></div>
+                <div class="col-3 mb-3"><a id="post-4" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img alt="a view of a mountain range at sunset" src="assets/img/photo-1717330550630-659d5d3f5f29.jpg" width="100%"></a></div>
+                <div class="col-3 mb-3"><a id="post-5" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img alt="the sun is setting over the ocean and rocks" src="assets/img/photo-1716831320710-5b159b831fdb.jpg" width="100%"></a></div>
+                <div class="col-3 mb-3"><a id="post-6" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img alt="a person cooking on a stove with flames" src="assets/img/photo-1717321302149-3c6c9c76de67.jpg" width="100%"></a></div>
+                <div class="col-3 mb-3"><a id="post-7" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img alt="a van parked in a field with mountains in the background" src="assets/img/photo-1717200997603-097f16adf0de.jpg" width="100%"></a></div>
+                <div class="col-3 mb-3"><a id="post-8" class="openModal" href="#" data-bs-target="#showImage" data-bs-toggle="modal"><img alt="a bunch of yellow flowers in a field" src="assets/img/photo-1716255254612-c0366e3bc5d5.jpg" width="100%"></a></div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="showImage">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center"><img id="modal-img" width="100%"></div>
+                    <div class="modal-footer p-2"><button class="btn btn-light btn-sm" type="button" data-bs-dismiss="modal">Tutup</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="show404">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h1>404</h1>
+                        <p>URL Anda mungkin Salah :"(</p>
+                    </div>
+                    <div class="modal-footer p-2"><button class="btn btn-light btn-sm" type="button" data-bs-dismiss="modal">Tutup</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
